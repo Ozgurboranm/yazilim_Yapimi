@@ -1,6 +1,6 @@
 ﻿namespace yazilim_Yapimi
 {
-    partial class Signup
+    partial class frmSignup
     {
         /// <summary>
         /// Required designer variable.
@@ -32,20 +32,20 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textPassword = new System.Windows.Forms.TextBox();
-            this.textUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textAdress = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.mtbTC = new System.Windows.Forms.MaskedTextBox();
             this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
             this.btnSignup = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.mtbTC = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // txtSurname
@@ -53,14 +53,14 @@
             this.txtSurname.Location = new System.Drawing.Point(138, 131);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(154, 31);
-            this.txtSurname.TabIndex = 12;
+            this.txtSurname.TabIndex = 2;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(138, 81);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(154, 31);
-            this.txtName.TabIndex = 11;
+            this.txtName.TabIndex = 1;
             // 
             // label3
             // 
@@ -82,19 +82,20 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Name:";
             // 
-            // textPassword
+            // txtPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(138, 239);
-            this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(154, 31);
-            this.textPassword.TabIndex = 16;
+            this.txtPassword.Location = new System.Drawing.Point(138, 239);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(154, 31);
+            this.txtPassword.TabIndex = 4;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // textUsername
+            // txtUsername
             // 
-            this.textUsername.Location = new System.Drawing.Point(138, 188);
-            this.textUsername.Name = "textUsername";
-            this.textUsername.Size = new System.Drawing.Size(154, 31);
-            this.textUsername.TabIndex = 15;
+            this.txtUsername.Location = new System.Drawing.Point(138, 188);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(154, 31);
+            this.txtUsername.TabIndex = 3;
             // 
             // label1
             // 
@@ -136,19 +137,20 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "TC:";
             // 
-            // textAdress
+            // txtAddress
             // 
-            this.textAdress.Location = new System.Drawing.Point(138, 424);
-            this.textAdress.Name = "textAdress";
-            this.textAdress.Size = new System.Drawing.Size(154, 31);
-            this.textAdress.TabIndex = 24;
+            this.txtAddress.Location = new System.Drawing.Point(138, 424);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(154, 31);
+            this.txtAddress.TabIndex = 8;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(138, 381);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(154, 31);
-            this.txtEmail.TabIndex = 23;
+            this.txtEmail.TabIndex = 7;
             // 
             // label7
             // 
@@ -170,22 +172,13 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Email:";
             // 
-            // mtbTC
-            // 
-            this.mtbTC.Location = new System.Drawing.Point(138, 290);
-            this.mtbTC.Mask = "00000000000";
-            this.mtbTC.Name = "mtbTC";
-            this.mtbTC.Size = new System.Drawing.Size(154, 31);
-            this.mtbTC.TabIndex = 25;
-            this.mtbTC.ValidatingType = typeof(int);
-            // 
             // mtbPhone
             // 
             this.mtbPhone.Location = new System.Drawing.Point(138, 338);
             this.mtbPhone.Mask = "(999) 000-0000";
             this.mtbPhone.Name = "mtbPhone";
             this.mtbPhone.Size = new System.Drawing.Size(154, 31);
-            this.mtbPhone.TabIndex = 26;
+            this.mtbPhone.TabIndex = 6;
             // 
             // btnSignup
             // 
@@ -193,9 +186,10 @@
             this.btnSignup.Location = new System.Drawing.Point(149, 473);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(101, 35);
-            this.btnSignup.TabIndex = 27;
+            this.btnSignup.TabIndex = 9;
             this.btnSignup.Text = "Sign Up";
             this.btnSignup.UseVisualStyleBackColor = false;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
             // label9
             // 
@@ -207,24 +201,33 @@
             this.label9.TabIndex = 28;
             this.label9.Text = "Sign Up";
             // 
-            // Signup
+            // mtbTC
             // 
+            this.mtbTC.Location = new System.Drawing.Point(138, 290);
+            this.mtbTC.Mask = "00000000000";
+            this.mtbTC.Name = "mtbTC";
+            this.mtbTC.Size = new System.Drawing.Size(154, 31);
+            this.mtbTC.TabIndex = 29;
+            // 
+            // frmSignup
+            // 
+            this.AcceptButton = this.btnSignup;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(359, 559);
+            this.Controls.Add(this.mtbTC);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.mtbPhone);
-            this.Controls.Add(this.mtbTC);
-            this.Controls.Add(this.textAdress);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textPassword);
-            this.Controls.Add(this.textUsername);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtSurname);
@@ -232,8 +235,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Name = "Signup";
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Name = "frmSignup";
             this.Text = "Signup";
             this.Load += new System.EventHandler(this.Signup_Load);
             this.ResumeLayout(false);
@@ -247,19 +250,19 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textPassword;
-        private System.Windows.Forms.TextBox textUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textAdress;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox mtbTC;
         private System.Windows.Forms.MaskedTextBox mtbPhone;
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.MaskedTextBox mtbTC;
     }
 }

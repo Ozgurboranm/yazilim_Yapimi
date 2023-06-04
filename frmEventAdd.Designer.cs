@@ -42,7 +42,7 @@
             this.txdate.Location = new System.Drawing.Point(29, 64);
             this.txdate.Name = "txdate";
             this.txdate.Size = new System.Drawing.Size(277, 29);
-            this.txdate.TabIndex = 0;
+            this.txdate.TabIndex = 1;
             // 
             // txevent
             // 
@@ -50,7 +50,7 @@
             this.txevent.Location = new System.Drawing.Point(29, 133);
             this.txevent.Name = "txevent";
             this.txevent.Size = new System.Drawing.Size(277, 29);
-            this.txevent.TabIndex = 1;
+            this.txevent.TabIndex = 2;
             // 
             // label1
             // 
@@ -75,13 +75,14 @@
             this.btnSave.Location = new System.Drawing.Point(231, 186);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 4;
+            this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // EventForm
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 309);
