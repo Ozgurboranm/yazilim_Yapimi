@@ -1,0 +1,13 @@
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\bin\Debug\yazilim_Yapimi.exe.config
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\bin\Debug\yazilim_Yapimi.exe
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\bin\Debug\yazilim_Yapimi.pdb
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.csproj.AssemblyReference.cache
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.csproj.SuggestedBindingRedirects.cache
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.Form1.resources
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.Properties.Resources.resources
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.UserControlBlank.resources
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.csproj.GenerateResource.cache
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.csproj.CoreCompileInputs.cache
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.exe
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.pdb
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.UserControlDays.resources
