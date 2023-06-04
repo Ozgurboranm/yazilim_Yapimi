@@ -64,7 +64,7 @@ namespace yazilim_Yapimi
             {
                 month = 12;
                 year--;
-            }
+            }//as
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthname + " " + year;
 
