@@ -25,6 +25,11 @@ namespace yazilim_Yapimi
         sqlconnection connection = new sqlconnection();
         private void btnSignup_Click(object sender, EventArgs e)
         {
+            if (txtName.Text == "" || txtSurname.Text == "" || txtUsername.Text == "" || txtPassword.Text == "" || mtbTC.Text == "" || mtbPhone.Text == "" || txtEmail.Text == "" || txtAddress.Text == "")
+            {
+                MessageBox.Show(" Cannot be Empty !");
+                return;
+            }
             SqlCommand command = new SqlCommand("insert into tbl_Login (KullaniciAd,KullaniciSoyad,KullaniciAdi,KullaniciSifre,KullaniciTc,KullaniciTelefon,KullaniciEmail,KullaniciAddress) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8)", connection.connection1());
             command.Parameters.AddWithValue("@p1", txtName.Text);
             command.Parameters.AddWithValue("@p2", txtSurname.Text);
@@ -37,6 +42,16 @@ namespace yazilim_Yapimi
             command.ExecuteNonQuery();
             connection.connection1().Close();
             MessageBox.Show("Your registration has been successful!");
+            frmMainMenu fr = new frmMainMenu();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMainMenu fr = new frmMainMenu();
+            fr.Show();
+            this.Hide();
         }
     }
 }

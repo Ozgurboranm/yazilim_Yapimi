@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Xml.Linq;
 
 namespace yazilim_Yapimi
 {
@@ -28,6 +29,11 @@ namespace yazilim_Yapimi
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            if (txtusername.Text == "" || txtPassword.Text == "")
+            {
+                MessageBox.Show(" Cannot be Empty !");
+                return;
+            }
             SqlCommand command = new SqlCommand ("Select * From tbl_Login Where KullaniciAdi=@p1 and KullaniciSifre=@p2",connection.connection1());
             command.Parameters.AddWithValue("@p1", txtusername.Text);
             command.Parameters.AddWithValue("@p2", txtPassword.Text);
@@ -44,5 +50,11 @@ namespace yazilim_Yapimi
             }
             connection.connection1().Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

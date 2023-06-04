@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventForm));
             this.txdate = new System.Windows.Forms.TextBox();
             this.txevent = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,58 +40,68 @@
             // 
             this.txdate.Enabled = false;
             this.txdate.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txdate.Location = new System.Drawing.Point(29, 64);
+            this.txdate.Location = new System.Drawing.Point(39, 73);
+            this.txdate.Margin = new System.Windows.Forms.Padding(4);
             this.txdate.Name = "txdate";
-            this.txdate.Size = new System.Drawing.Size(277, 29);
+            this.txdate.Size = new System.Drawing.Size(300, 29);
             this.txdate.TabIndex = 1;
             // 
             // txevent
             // 
             this.txevent.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txevent.Location = new System.Drawing.Point(29, 133);
+            this.txevent.Location = new System.Drawing.Point(40, 172);
+            this.txevent.Margin = new System.Windows.Forms.Padding(4);
+            this.txevent.Multiline = true;
             this.txevent.Name = "txevent";
-            this.txevent.Size = new System.Drawing.Size(277, 29);
+            this.txevent.Size = new System.Drawing.Size(299, 20);
             this.txevent.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 39);
+            this.label1.Location = new System.Drawing.Point(34, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.Size = new System.Drawing.Size(42, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Date";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 108);
+            this.label2.Location = new System.Drawing.Point(35, 131);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(47, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Event";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(231, 186);
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSave.Location = new System.Drawing.Point(227, 248);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(112, 34);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // EventForm
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 309);
+            this.ClientSize = new System.Drawing.Size(368, 307);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txevent);
             this.Controls.Add(this.txdate);
+            this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EventForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event Add";
