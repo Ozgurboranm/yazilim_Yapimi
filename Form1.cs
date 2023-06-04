@@ -11,10 +11,11 @@ using System.Windows.Forms;
 
 namespace yazilim_Yapimi
 {
-    public partial class Form1 : Form
+    public partial class Calendar : Form
     {
+       
         int month,year;
-        public Form1()
+        public Calendar()
         {
             InitializeComponent();
         }

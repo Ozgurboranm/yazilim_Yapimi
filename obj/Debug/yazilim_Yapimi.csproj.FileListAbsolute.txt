@@ -3,7 +3,6 @@ C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapim
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\bin\Debug\yazilim_Yapimi.pdb
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.csproj.AssemblyReference.cache
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.csproj.SuggestedBindingRedirects.cache
-C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.Form1.resources
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.Properties.Resources.resources
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.UserControlBlank.resources
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.csproj.GenerateResource.cache
@@ -11,3 +10,7 @@ C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapim
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.exe
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.pdb
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.UserControlDays.resources
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.EventForm.resources
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.Calendar.resources
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.MainMenu.resources
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.Signup.resources
