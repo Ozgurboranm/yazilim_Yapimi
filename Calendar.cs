@@ -15,6 +15,9 @@ namespace yazilim_Yapimi
     {
        
         int month,year;
+
+        public static int static_month, static_year;
+
         public Calendar()
         {
             InitializeComponent();
@@ -34,6 +37,8 @@ namespace yazilim_Yapimi
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text =monthname + " " + year;
 
+            static_month = month;
+            static_year = year;
 
             DateTime startofthemonth = new DateTime(year, month, 1);
 
@@ -61,6 +66,8 @@ namespace yazilim_Yapimi
             daycontainer.Controls.Clear();
 
             month--;
+            static_month = month;
+            static_year = year;
             if (month < 1)
             {
                 month = 12;
@@ -94,6 +101,8 @@ namespace yazilim_Yapimi
             daycontainer.Controls.Clear();
 
             month++;
+            static_month = month;
+            static_year = year;
             if (month > 12)
             {
                 month = 1;

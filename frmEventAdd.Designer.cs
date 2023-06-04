@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventForm));
-            this.txdate = new System.Windows.Forms.TextBox();
-            this.txevent = new System.Windows.Forms.TextBox();
+            this.txtdate = new System.Windows.Forms.TextBox();
+            this.txtevent = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txdate
+            // txtdate
             // 
-            this.txdate.Enabled = false;
-            this.txdate.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txdate.Location = new System.Drawing.Point(39, 73);
-            this.txdate.Margin = new System.Windows.Forms.Padding(4);
-            this.txdate.Name = "txdate";
-            this.txdate.Size = new System.Drawing.Size(300, 29);
-            this.txdate.TabIndex = 1;
+            this.txtdate.Enabled = false;
+            this.txtdate.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdate.Location = new System.Drawing.Point(39, 73);
+            this.txtdate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(300, 29);
+            this.txtdate.TabIndex = 1;
             // 
-            // txevent
+            // txtevent
             // 
-            this.txevent.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txevent.Location = new System.Drawing.Point(40, 172);
-            this.txevent.Margin = new System.Windows.Forms.Padding(4);
-            this.txevent.Multiline = true;
-            this.txevent.Name = "txevent";
-            this.txevent.Size = new System.Drawing.Size(299, 20);
-            this.txevent.TabIndex = 2;
+            this.txtevent.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtevent.Location = new System.Drawing.Point(40, 172);
+            this.txtevent.Margin = new System.Windows.Forms.Padding(4);
+            this.txtevent.Multiline = true;
+            this.txtevent.Name = "txtevent";
+            this.txtevent.Size = new System.Drawing.Size(299, 29);
+            this.txtevent.TabIndex = 2;
             // 
             // label1
             // 
@@ -97,8 +97,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txevent);
-            this.Controls.Add(this.txdate);
+            this.Controls.Add(this.txtevent);
+            this.Controls.Add(this.txtdate);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -113,8 +113,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txdate;
-        private System.Windows.Forms.TextBox txevent;
+        private System.Windows.Forms.TextBox txtdate;
+        private System.Windows.Forms.TextBox txtevent;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSave;
