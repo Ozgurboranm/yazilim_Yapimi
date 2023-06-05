@@ -104,7 +104,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EventForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Event Add";
+            this.Text = "Quick Add";
             this.Load += new System.EventHandler(this.EventForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

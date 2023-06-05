@@ -14,3 +14,4 @@ C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapim
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.Calendar.resources
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.frmMainMenu.resources
 C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.frmSignup.resources
+C:\Users\ozgur\OneDrive\Desktop\Masaüstü\Projeler\yazilim_Yapimi\yazilim_Yapimi\obj\Debug\yazilim_Yapimi.frmDetails.resources

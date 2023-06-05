@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Globalization;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace yazilim_Yapimi
 {
@@ -37,14 +38,7 @@ namespace yazilim_Yapimi
         }
         private void displayEvent()
         {
-            sqlconnection connection = new sqlconnection();
-            SqlCommand command = new SqlCommand("Select (*) From tbl_Event Where Date)", connection.connection1());
-            SqlDataReader reader = command.ExecuteReader();
-            if(reader.Read()) 
-            {
-                lbevent.Text = reader["event"].ToString();
-            }
-            reader.Close();
+         
         }
     }
 }

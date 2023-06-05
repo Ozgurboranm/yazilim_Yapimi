@@ -59,6 +59,21 @@ namespace yazilim_Yapimi
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            frmMainMenu fr = new frmMainMenu();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmDetails fr = new frmDetails();
+            fr.Show();
+            this.Hide();
+        }
+
         private void btnPrevious_Click(object sender, EventArgs e)
         {
 

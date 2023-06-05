@@ -29,6 +29,11 @@ namespace yazilim_Yapimi
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if ( txtevent.Text == "")
+            {
+                MessageBox.Show(" Cannot be Empty !");
+                return;
+            }
             SqlCommand command = new SqlCommand("insert into tbl_Event (Date,Event) values (@p1,@p2)", connection.connection1());
             command.Parameters.AddWithValue("@p1", txtdate.Text);
             command.Parameters.AddWithValue("@p2", txtevent.Text);
