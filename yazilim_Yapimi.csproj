@@ -91,10 +91,10 @@
     <Compile Include="UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
-    <Compile Include="yazilim_YapimiDataSet.Designer.cs">
+    <Compile Include="yazilim_YapimiDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>yazilim_YapimiDataSet.xsd</DependentUpon>
+      <DependentUpon>yazilim_YapimiDataSet3.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
@@ -135,16 +135,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="yazilim_YapimiDataSet.xsc">
-      <DependentUpon>yazilim_YapimiDataSet.xsd</DependentUpon>
+    <None Include="yazilim_YapimiDataSet3.xsc">
+      <DependentUpon>yazilim_YapimiDataSet3.xsd</DependentUpon>
     </None>
-    <None Include="yazilim_YapimiDataSet.xsd">
+    <None Include="yazilim_YapimiDataSet3.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>yazilim_YapimiDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>yazilim_YapimiDataSet3.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="yazilim_YapimiDataSet.xss">
-      <DependentUpon>yazilim_YapimiDataSet.xsd</DependentUpon>
+    <None Include="yazilim_YapimiDataSet3.xss">
+      <DependentUpon>yazilim_YapimiDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

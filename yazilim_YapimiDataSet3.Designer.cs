@@ -20,9 +20,9 @@ namespace yazilim_Yapimi {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("yazilim_YapimiDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("yazilim_YapimiDataSet3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class yazilim_YapimiDataSet : global::System.Data.DataSet {
+    public partial class yazilim_YapimiDataSet3 : global::System.Data.DataSet {
         
         private tbl_EventDataTable tabletbl_Event;
         
@@ -30,7 +30,7 @@ namespace yazilim_Yapimi {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public yazilim_YapimiDataSet() {
+        public yazilim_YapimiDataSet3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace yazilim_Yapimi {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected yazilim_YapimiDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected yazilim_YapimiDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace yazilim_Yapimi {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            yazilim_YapimiDataSet cln = ((yazilim_YapimiDataSet)(base.Clone()));
+            yazilim_YapimiDataSet3 cln = ((yazilim_YapimiDataSet3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace yazilim_Yapimi {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "yazilim_YapimiDataSet";
+            this.DataSetName = "yazilim_YapimiDataSet3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/yazilim_YapimiDataSet.xsd";
+            this.Namespace = "http://tempuri.org/yazilim_YapimiDataSet3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabletbl_Event = new tbl_EventDataTable();
@@ -225,7 +225,7 @@ namespace yazilim_Yapimi {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            yazilim_YapimiDataSet ds = new yazilim_YapimiDataSet();
+            yazilim_YapimiDataSet3 ds = new yazilim_YapimiDataSet3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -279,6 +279,8 @@ namespace yazilim_Yapimi {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class tbl_EventDataTable : global::System.Data.TypedTableBase<tbl_EventRow> {
             
+            private global::System.Data.DataColumn columnid;
+            
             private global::System.Data.DataColumn columnDate;
             
             private global::System.Data.DataColumn columnEvent;
@@ -314,6 +316,14 @@ namespace yazilim_Yapimi {
             protected tbl_EventDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn idColumn {
+                get {
+                    return this.columnid;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -372,6 +382,7 @@ namespace yazilim_Yapimi {
             public tbl_EventRow Addtbl_EventRow(string Date, string Event) {
                 tbl_EventRow rowtbl_EventRow = ((tbl_EventRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        null,
                         Date,
                         Event};
                 rowtbl_EventRow.ItemArray = columnValuesArray;
@@ -396,6 +407,7 @@ namespace yazilim_Yapimi {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
+                this.columnid = base.Columns["id"];
                 this.columnDate = base.Columns["Date"];
                 this.columnEvent = base.Columns["Event"];
             }
@@ -403,12 +415,19 @@ namespace yazilim_Yapimi {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
+                this.columnid = new global::System.Data.DataColumn("id", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid);
                 this.columnDate = new global::System.Data.DataColumn("Date", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDate);
                 this.columnEvent = new global::System.Data.DataColumn("Event", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEvent);
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
+                this.columnid.AllowDBNull = false;
+                this.columnid.ReadOnly = true;
                 this.columnDate.MaxLength = 10;
-                this.columnEvent.MaxLength = 10;
+                this.columnEvent.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -476,7 +495,7 @@ namespace yazilim_Yapimi {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                yazilim_YapimiDataSet ds = new yazilim_YapimiDataSet();
+                yazilim_YapimiDataSet3 ds = new yazilim_YapimiDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -547,6 +566,17 @@ namespace yazilim_Yapimi {
             internal tbl_EventRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tabletbl_Event = ((tbl_EventDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public short id {
+                get {
+                    return ((short)(this[this.tabletbl_Event.idColumn]));
+                }
+                set {
+                    this[this.tabletbl_Event.idColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -641,7 +671,7 @@ namespace yazilim_Yapimi {
         }
     }
 }
-namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
+namespace yazilim_Yapimi.yazilim_YapimiDataSet3TableAdapters {
     
     
     /// <summary>
@@ -765,6 +795,7 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "tbl_Event";
+            tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("Date", "Date");
             tableMapping.ColumnMappings.Add("Event", "Event");
             this._adapter.TableMappings.Add(tableMapping);
@@ -789,7 +820,7 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Date, Event FROM dbo.tbl_Event";
+            this._commandCollection[0].CommandText = "SELECT id, Date, Event FROM dbo.tbl_Event";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -797,7 +828,7 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(yazilim_YapimiDataSet.tbl_EventDataTable dataTable) {
+        public virtual int Fill(yazilim_YapimiDataSet3.tbl_EventDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -810,9 +841,9 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual yazilim_YapimiDataSet.tbl_EventDataTable GetData() {
+        public virtual yazilim_YapimiDataSet3.tbl_EventDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            yazilim_YapimiDataSet.tbl_EventDataTable dataTable = new yazilim_YapimiDataSet.tbl_EventDataTable();
+            yazilim_YapimiDataSet3.tbl_EventDataTable dataTable = new yazilim_YapimiDataSet3.tbl_EventDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -820,14 +851,14 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(yazilim_YapimiDataSet.tbl_EventDataTable dataTable) {
+        public virtual int Update(yazilim_YapimiDataSet3.tbl_EventDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(yazilim_YapimiDataSet dataSet) {
+        public virtual int Update(yazilim_YapimiDataSet3 dataSet) {
             return this.Adapter.Update(dataSet, "tbl_Event");
         }
         
@@ -971,7 +1002,7 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(yazilim_YapimiDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(yazilim_YapimiDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_EventTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.tbl_Event.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -990,7 +1021,7 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(yazilim_YapimiDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(yazilim_YapimiDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_EventTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.tbl_Event.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1008,7 +1039,7 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(yazilim_YapimiDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(yazilim_YapimiDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tbl_EventTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tbl_Event.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1050,7 +1081,7 @@ namespace yazilim_Yapimi.yazilim_YapimiDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(yazilim_YapimiDataSet dataSet) {
+        public virtual int UpdateAll(yazilim_YapimiDataSet3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
