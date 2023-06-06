@@ -74,6 +74,11 @@ namespace yazilim_Yapimi
             this.Hide();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+          
+        }
+
         private void btnPrevious_Click(object sender, EventArgs e)
         {
 

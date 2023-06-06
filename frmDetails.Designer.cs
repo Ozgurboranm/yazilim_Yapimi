@@ -42,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbEvent = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tbDate = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -49,9 +50,9 @@
             this.btnCean = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnList = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.tbl_EventTableAdapter3 = new yazilim_Yapimi.yazilim_YapimiDataSet3TableAdapters.tbl_EventTableAdapter();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEventBindingSource3)).BeginInit();
@@ -70,6 +71,7 @@
             this.btnBack.Size = new System.Drawing.Size(115, 42);
             this.btnBack.TabIndex = 12;
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
             // groupBox1
             // 
@@ -169,6 +171,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Event Add";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(17, 122);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(76, 27);
+            this.checkBox1.TabIndex = 18;
+            this.checkBox1.Text = "Alarm";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // tbDate
             // 
             this.tbDate.Location = new System.Drawing.Point(94, 28);
@@ -240,6 +252,14 @@
             this.btnList.UseVisualStyleBackColor = true;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
+            // tbl_EventTableAdapter3
+            // 
+            this.tbl_EventTableAdapter3.ClearBeforeFill = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -249,20 +269,6 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "label3";
             this.label3.Visible = false;
-            // 
-            // tbl_EventTableAdapter3
-            // 
-            this.tbl_EventTableAdapter3.ClearBeforeFill = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(17, 122);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(76, 27);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = "Alarm";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // frmDetails
             // 
@@ -307,7 +313,6 @@
         private System.Windows.Forms.TextBox tbDate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private yazilim_YapimiDataSet3 yazilim_YapimiDataSet3;
         private System.Windows.Forms.BindingSource tblEventBindingSource3;
@@ -316,5 +321,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eventDataGridViewTextBoxColumn;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label3;
     }
 }

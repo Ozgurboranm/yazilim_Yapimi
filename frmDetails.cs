@@ -107,5 +107,20 @@ namespace yazilim_Yapimi
         {
             this.tbl_EventTableAdapter3.Fill(this.yazilim_YapimiDataSet3.tbl_Event);
         }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            Calendar fr = new Calendar();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //label8.Text = DateTime.Now.Day.ToString();
+           // label9.Text = DateTime.Now.Month.ToString();
+           // label10.Text = DateTime.Now.DayOfYear.ToString();
+           
+        }
     }
 }
